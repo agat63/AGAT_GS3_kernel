@@ -1,0 +1,7 @@
+To build source-based kernel:
+
+1. Edit cm_build.sh to reflect proper toolchain location. Using Linaro tools will result in a failed build. Only arm-eabi-4.4.3 has prover to succeed.
+
+   export CROSS_COMPILE=../cm/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+
+2. Run cm_build.sh
