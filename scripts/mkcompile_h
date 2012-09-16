@@ -28,9 +28,9 @@ export LC_ALL
 
 if [ -z "$KBUILD_BUILD_VERSION" ]; then
 	if [ -r .version ]; then
-		VERSION=AGAT_GS3_v0.0.1
+		VERSION=AGAT_GS3_v0.0.2
 	else
-		VERSION=AGAT_GS3_v0.0.1
+		VERSION=AGAT_GS3_v0.0.2
 	fi
 else
 	VERSION=$KBUILD_BUILD_VERSION

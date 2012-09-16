@@ -23,7 +23,7 @@ cp -r kernel-extras/mkboot $pwd
 cp -r kernel-extras/zip $pwd
 
 # Build entire kernel and create build log
-make m2_spr_defconfig
+make agat_defconfig
 make headers_install
 make modules
 make -j8 zImage 2>&1 | tee ~/logs/$version.txt

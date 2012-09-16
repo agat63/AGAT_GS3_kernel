@@ -26,6 +26,7 @@ cp -r kernel-extras/zip $pwd
 make m2_spr_defconfig
 make headers_install
 make modules
+find -name '*.ko' -exec cp -av {} $pwd/kernel-extras/mkboot/ramdisk-l710-tw/lib/modules/ \;
 make -$jobs zImage 2>&1 | tee ~/logs/$version.txt
 
 echo "making boot image"
