@@ -25,8 +25,8 @@ cp -r kernel-extras/zip $pwd
 # Build entire kernel and create build log
 make agat_defconfig
 make headers_install
-make modules
-make -j8 zImage 2>&1 | tee ~/logs/$version.txt
+# make modules
+make -j4 zImage 2>&1 | tee ~/logs/$version.txt
 
 echo "making boot image"
 cp arch/arm/boot/zImage mkboot/
