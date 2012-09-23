@@ -193,7 +193,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= arm
-CROSS_COMPILE	?= /home/agat/GSIII/AGAT_GS3_kernel_uv/kernel-extras/arm-eabi-4.4.3/bin/arm-eabi-
+CROSS_COMPILE	?= /home/agat/GSIII/AGAT_GS3_kernel_uv/kernel-extras/google-4.6/bin/arm-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
